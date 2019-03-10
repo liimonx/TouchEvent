@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TouchEvent on desktop</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    body * {
+      box-sizing: border-box;
+    }
+
+    .TouchEvent-container {
+      background: rgb(103, 58, 183);
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    .TouchEvent-container h1 {
+      font-size: 50px;
+      opacity: 0.3;
+    }
+
+    .output-data {
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="TouchEvent-container">
+    <h1>Click and move your cursor</h1>
+    <div class="output-data">
+      <h2>Output Data</h2>
+      <p class="startX"> Start X : <span>0</span></p>
+      <p class="startY"> Start Y : <span>0</span></p>
+      <p class="endX">End X : <span>0</span></p>
+      <p class="endY">End Y : <span>0</span></p>
+      <p class="walkX">Walk X : <span>0</span></p>
+      <p class="walkY">Walk Y : <span>0</span></p>
+      <p class="target">Target element : <span></span></p>
+    </div>
+  </div>
+
+  <script src="./js/TouchEvent.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
