@@ -19,6 +19,7 @@ export default class TouchEvent {
     this.init()
   }
 
+
   notMobile(element) {
 
     addEvent(element, 'mousedown', (e) => {
@@ -36,17 +37,14 @@ export default class TouchEvent {
     })
 
     addEvent(element, 'mousemove', (e) => {
-
       if (!this.isDown) return
 
       e.preventDefault()
 
       this.endX = e.layerX
       this.endY = e.layerY
-
       this.walkX = this.endX - this.startX
       this.walkY = this.endY - this.startY
-
       this.callback(this)
 
     })
@@ -54,8 +52,9 @@ export default class TouchEvent {
   }
 
   mobile(element) {
+    
     addEvent(element, 'touchstart', (e) => {
-     const ev = e.changedTouches[0]
+      const ev = e.changedTouches[0]
 
       this.isDown = !0
       this.startX = ev.clientX - element.offsetLeft
@@ -72,15 +71,10 @@ export default class TouchEvent {
       e.preventDefault()
       const ev = e.changedTouches[0]
 
-      console.log(ev);
-      
-
       this.endX = ev.clientX
       this.endY = ev.clientY
-
       this.walkX = this.endX - this.startX
       this.walkY = this.endY - this.startY
-
       this.callback(this)
     })
 
