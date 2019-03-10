@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
 const dirNode = 'node_modules';
-const dirApp = path.join(__dirname, 'src/script');
+const dirApp = path.join(__dirname, 'src');
 const dirAssets = path.join(__dirname, 'docs');
 
 
