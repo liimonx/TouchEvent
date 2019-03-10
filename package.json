@@ -1,0 +1,39 @@
+{
+  "name": "dragEvent",
+  "version": "1.0.0",
+  "description": "Touch Event for all device",
+  "main": "dragevent.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
+    "build": "webpack -p --progress --mode production --config webpack.config.build.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Limon Khan",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.17.10"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.4",
+    "babel-preset-env": "1.7.0",
+    "breakpoint-sass": "^2.7.1",
+    "clean-webpack-plugin": "0.1.19",
+    "cross-env": "5.1.6",
+    "html-webpack-plugin": "3.2.0",
+    "url-loader": "1.0.1",
+    "webpack": "4.9.1",
+    "webpack-cli": "2.1.4",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "4.1.2"
+  },
+  "homepage": "https://github.com/liimonx/TouchEvent#readme"
+}
