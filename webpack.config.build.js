@@ -9,7 +9,7 @@ module.exports = merge(webpackConfig, {
 
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'SliderZero.1.0.0.js'
+        filename: 'TouchEvent.js'
     },
 
     plugins: [

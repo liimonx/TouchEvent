@@ -1,8 +1,8 @@
 {
-  "name": "dragEvent",
+  "name": "TouchEvent",
   "version": "1.0.0",
   "description": "Touch Event for all device",
-  "main": "dragevent.js",
+  "main": "TouchEvent.js",
   "directories": {
     "doc": "docs"
   },
