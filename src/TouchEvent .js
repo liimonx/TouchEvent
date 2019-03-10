@@ -1,8 +1,9 @@
 import {
-  addEvent
+  addEvent,
+  detectMobile
 } from './components/utility'
 
-export default class TouchEvent  {
+export default class TouchEvent {
 
   constructor(elm, callback) {
     this.callback = callback
@@ -18,7 +19,7 @@ export default class TouchEvent  {
     this.init()
   }
 
-  walk(element) {
+  notMobile(element) {
 
     addEvent(element, 'mousedown', (e) => {
       this.isDown = !0
@@ -52,10 +53,47 @@ export default class TouchEvent  {
 
   }
 
+  mobile(element) {
+    addEvent(element, 'touchstart', (e) => {
+     const ev = e.changedTouches[0]
+
+      this.isDown = !0
+      this.startX = ev.clientX - element.offsetLeft
+      this.startY = ev.clientY - element.offsetTop
+    })
+
+    addEvent(element, 'touchend', (e) => {
+      this.isDown = !1
+    })
+
+    addEvent(element, 'touchmove', (e) => {
+      if (!this.isDown) return
+
+      e.preventDefault()
+      const ev = e.changedTouches[0]
+
+      console.log(ev);
+      
+
+      this.endX = ev.clientX
+      this.endY = ev.clientY
+
+      this.walkX = this.endX - this.startX
+      this.walkY = this.endY - this.startY
+
+      this.callback(this)
+    })
+
+  }
+
   init() {
-    this.walk(this.target)
+    if (!detectMobile()) {
+      this.notMobile(this.target)
+    } else {
+      this.mobile(this.target)
+    }
   }
 
 }
 
-window.TouchEvent  = TouchEvent 
+window.TouchEvent = TouchEvent
