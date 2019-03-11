@@ -1,8 +1,8 @@
 {
   "name": "TouchEvent",
   "version": "1.0.0",
-  "description": "Touch Event for all device",
-  "main": "TouchEvent.js",
+  "description": "javaScript Touch Event for all devices",
+  "main": "/src/TouchEvent.js",
   "directories": {
     "doc": "docs"
   },
@@ -11,15 +11,16 @@
     "build": "webpack -p --progress --mode production --config webpack.config.build.js"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/liimonx/TouchEvent"
   },
   "keywords": [
-    "javascript"
+    "javascript, touch, event"
   ],
   "author": "Limon Khan",
   "license": "MIT",
   "dependencies": {
-    "lodash": "4.17.10"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "babel-core": "6.26.3",
