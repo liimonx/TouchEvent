@@ -1,4 +1,5 @@
 # TouchEvent
+TouchEvent is just a simple Script that will allow to support touch event on all devices. 
 
 **Demo:** [https://liimonx.github.io/TouchEvent/](https://liimonx.github.io/TouchEvent/)
 
@@ -11,11 +12,11 @@ npm i TouchEvent
 ```
 Now add it to your project:
 
-####Webpack
+###Webpack
 ```JAVASCRIPT
   import TouchEvent from 'TouchEvent'
 ```
-####HTML
+###HTML
 ```HTML
   <script src="./TouchEvent/dist/TouchEvent.js"></script>
 ```
