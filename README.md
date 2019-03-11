@@ -12,11 +12,11 @@ npm i TouchEvent
 ```
 Now add it to your project:
 
-###Webpack
+Webpack
 ```JAVASCRIPT
   import TouchEvent from 'TouchEvent'
 ```
-###HTML
+HTML
 ```HTML
   <script src="./TouchEvent/dist/TouchEvent.js"></script>
 ```
