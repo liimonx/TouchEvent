@@ -1,5 +1,5 @@
-# TouchEvent
-TouchEvent is just a simple Script that will allow to support touch event on all devices. 
+# touchevent.js
+TouchEvent is just a simple Script that will allow supporting touch event on all devices. 
 
 **Demo:** [https://liimonx.github.io/TouchEvent/](https://liimonx.github.io/TouchEvent/)
 
@@ -8,7 +8,7 @@ TouchEvent is just a simple Script that will allow to support touch event on all
 
 ### npm
 ```
-npm i TouchEvent
+npm i TouchEvent.js
 ```
 Now add it to your project:
 

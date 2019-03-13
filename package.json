@@ -1,7 +1,7 @@
 {
-  "name": "TouchEvent",
+  "name": "touchevent.js",
   "version": "1.0.0",
-  "description": "javaScript Touch Event for all devices",
+  "description": "TouchEvent is just a simple Script that will allow supporting touch event on all devices.",
   "main": "/src/TouchEvent.js",
   "directories": {
     "doc": "docs"
