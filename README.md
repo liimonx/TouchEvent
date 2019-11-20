@@ -35,4 +35,4 @@ HTML
 ```
 
 ## Licence
-Neon is under [MIT licence](https://opensource.org/licenses/mit-license.php)
+TouchEvent.js is under [MIT licence](https://opensource.org/licenses/mit-license.php)
